@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>Tabellen und Formeln sauber setzen</title></head>
+<body>
+<h1>Tabellen und Formeln sauber setzen</h1>
+<h2>Eine einfache Tabelle</h2>
+<pre><code>\begin{table}[htbp]
+  \centering
+  \caption{Messwerte im Überblick.}
+  \label{tab:werte}
+  \begin{tabular}{lr}
+    \hline
+    Probe & Wert \\
+    \hline
+    A & 12.4 \\
+    B & 15.1 \\
+    \hline
+  \end{tabular}
+\end{table}</code></pre>
+<p>Bei umfangreichen Tabellen oder Berechnungen bleibt die Quelldatei (z. B. Calc) erhalten. Übernimm nur eine nachvollziehbare, lesbare Darstellung in die Arbeit.</p>
+<h2>Formeln</h2>
+<pre><code>Die Konzentration beträgt $c = \frac{n}{V}$.
+
+\begin{equation}
+  E = m c^2
+  \label{eq:energie}
+\end{equation}</code></pre>
+<p>Für die meisten Formeln genügen LaTeX-Grundbefehle. Bei vielen mathematischen Formeln ergänze im Vorspann <code>\usepackage{amsmath}</code>. Erkläre alle Grössen, Einheiten und Ergebnisse im Lauftext.</p>
+</body>
+</html>

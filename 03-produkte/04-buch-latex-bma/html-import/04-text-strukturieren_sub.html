@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>Listen, Hervorhebung und Querverweise</title></head>
+<body>
+<h1>Listen, Hervorhebung und Querverweise</h1>
+<h2>Listen</h2>
+<pre><code>\begin{itemize}
+  \item erster Punkt
+  \item zweiter Punkt
+\end{itemize}
+
+\begin{enumerate}
+  \item erster Schritt
+  \item zweiter Schritt
+\end{enumerate}</code></pre>
+<h2>Hervorheben</h2>
+<p>Verwende <code>\emph{wichtig}</code> für Betonung und <code>\textbf{fett}</code> nur zurückhaltend. Entscheide nie allein über die Schriftgrösse; die Dokumentklasse steuert das einheitlich.</p>
+<h2>Stabile Verweise</h2>
+<pre><code>\section{Methode}\label{sec:methode}
+Wie in Abschnitt~\ref{sec:methode} beschrieben, ...</code></pre>
+<p>Kompiliere mindestens zweimal, damit LaTeX alle Nummern auflösen kann. Steht in der PDF noch «??», speichere und kompiliere erneut.</p>
+<div class="alert alert-info" role="note"><p>Die Tilde <code>~</code> verhindert einen Zeilenumbruch zwischen «Abschnitt» und seiner Nummer.</p></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>Dein erstes BMA-Grundgerüst</title></head>
+<body>
+<h1>Dein erstes BMA-Grundgerüst</h1>
+<p>Starte mit einer bewusst kleinen, funktionierenden Datei. Kopiere nicht gleich eine komplexe Vorlage aus dem Internet.</p>
+<pre><code>\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\title{Titel der Berufsmaturitätsarbeit}
+\author{Vorname Nachname}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einleitung}
+Hier beginnt dein Text.
+\end{document}</code></pre>
+<p>Speichere die Datei als <code>main.tex</code> und kompiliere sie. Erst wenn diese PDF fehlerfrei entsteht, ergänzt du weitere Pakete oder Kapitel.</p>
+<h2>Arbeitsregel</h2>
+<p>Eine Fehlermeldung bezieht sich oft auf die letzte Änderung. Speichere, kompiliere nach einem kleinen Schritt und lies die <strong>erste</strong> rote Fehlermeldung – nicht die letzte Folgefehlermeldung.</p>
+</body>
+</html>

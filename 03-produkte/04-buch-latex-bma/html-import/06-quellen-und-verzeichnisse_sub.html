@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>Inhalts-, Abbildungs- und Tabellenverzeichnisse</title></head>
+<body>
+<h1>Inhalts-, Abbildungs- und Tabellenverzeichnisse</h1>
+<p>Diese Verzeichnisse sind Befehle, keine manuell geschriebenen Listen.</p>
+<pre><code>\tableofcontents
+\listoffigures
+\listoftables</code></pre>
+<p>Setze die Befehle an die Stelle, an der die Verzeichnisse erscheinen sollen. Sie werden aus <code>\section</code>, <code>\caption</code> und <code>\label</code> aufgebaut.</p>
+<h2>Richtige Kompilierreihenfolge</h2>
+<p>Nach Strukturänderungen genügt eine einzige PDF-Erzeugung oft nicht. In TeXstudio kann die Schnellübersetzung die nötigen Läufe ausführen. Bei <code>biblatex</code> ist typischerweise nötig: <code>pdfLaTeX → Biber → pdfLaTeX → pdfLaTeX</code>.</p>
+<h2>Fehlerdiagnose</h2>
+<ul>
+  <li>«??» bei Referenzen: mindestens zweimal kompilieren.</li>
+  <li>Leeres Literaturverzeichnis: Prüfe Dateiname, Zitatschlüssel und ob Biber ausgeführt wurde.</li>
+  <li>Abbildung fehlt im Verzeichnis: Prüfe <code>\caption{...}</code>, nicht nur den Text unter dem Bild.</li>
+</ul>
+</body>
+</html>

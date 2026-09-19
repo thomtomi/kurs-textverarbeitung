@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>1. LaTeX unter Windows installieren</title></head>
+<body>
+<h1>1. LaTeX unter Windows installieren</h1>
+<p>Unter Windows brauchst du zwei Bausteine: eine <strong>TeX-Distribution</strong>, die deine Datei in eine PDF umwandelt, und einen <strong>Editor</strong>, in dem du schreibst.</p>
+<h2>Empfohlene Kombination für Einsteiger:innen</h2>
+<p><strong>MiKTeX + TeXstudio</strong> ist eine gut zugängliche lokale Kombination. MiKTeX stellt LaTeX bereit; TeXstudio bietet Syntaxfarben, Assistenten, einen PDF-Betrachter und Hinweise zu Referenzen.</p>
+<ol>
+  <li>Lade den <a href="https://miktex.org/download" target="_blank" rel="noopener">Basic MiKTeX Installer</a> von der offiziellen MiKTeX-Seite herunter und installiere ihn.</li>
+  <li>Wähle, falls abgefragt, dass fehlende Pakete <strong>automatisch installiert</strong> werden dürfen. Bestätige nur Pakete, deren Zweck du nachvollziehen kannst.</li>
+  <li>Lade <a href="https://texstudio.org/" target="_blank" rel="noopener">TeXstudio</a> herunter und führe den Windows-Installer aus.</li>
+  <li>Starte TeXstudio. Unter <strong>Optionen → TeXstudio konfigurieren → Erzeugen</strong> soll als Standardkompilierer <em>pdfLaTeX</em> stehen.</li>
+</ol>
+<div class="alert alert-info" role="note"><p>Installiere Distribution und Editor nur von den offiziellen Seiten. TeXstudio kompiliert nicht selbst; ohne MiKTeX bleibt die PDF-Erzeugung deshalb unvollständig.</p></div>
+<h2>Erster Funktionstest</h2>
+<p>Lege eine Datei <code>main.tex</code> an, füge den Minimalcode aus dem nächsten Unterkapitel ein und drücke <strong>F5</strong> oder den grünen Pfeil. Erscheint eine PDF mit deinem Text, ist die Installation bereit.</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>5. Quellen und Literaturverzeichnis</title></head>
+<body>
+<h1>5. Quellen und Literaturverzeichnis</h1>
+<p>Für die BMA gilt APA 7. LaTeX kann das Literaturverzeichnis erzeugen, ersetzt aber weder sorgfältige Quellenarbeit noch die Prüfung jedes Eintrags.</p>
+<h2>Einsteigerfreundlicher Weg: Zotero + Better BibTeX</h2>
+<ol>
+  <li>Erfasse Quellen vollständig in Zotero.</li>
+  <li>Exportiere sie als <code>quellen.bib</code> (bei Bedarf mit der Erweiterung Better BibTeX).</li>
+  <li>Verweise im Text mit <code>\parencite{schluessel}</code>.</li>
+  <li>Erzeuge das Verzeichnis mit <code>\printbibliography</code> und prüfe die APA-7-Ausgabe genau.</li>
+</ol>
+<p>Die BMA-Vorlage empfiehlt Zotero. Halte dich bei Sonderfällen an das Moodle-Modul «Quellenangaben / Zitieren» und deine Betreuungsperson.</p>
+<h2>Minimaler Vorspann mit biblatex</h2>
+<pre><code>\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{quellen.bib}
+...
+Eine Quelle belegt dies \parencite{muster2026}.
+...
+\printbibliography</code></pre>
+</body>
+</html>

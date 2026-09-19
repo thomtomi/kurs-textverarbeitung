@@ -1,0 +1,17 @@
+{
+  "contentType": "H5P.PersonalityQuiz",
+  "title": "Welches Textverarbeitungs-Tool passt zu mir?",
+  "language": "de",
+  "mainLibrary": "H5P.PersonalityQuiz",
+  "embedTypes": [
+    "iframe"
+  ],
+  "license": "U",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.PersonalityQuiz",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}

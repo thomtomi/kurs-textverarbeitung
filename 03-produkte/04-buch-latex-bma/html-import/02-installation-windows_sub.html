@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>macOS: MacTeX und TeXstudio</title></head>
+<body>
+<h1>macOS: MacTeX und TeXstudio</h1>
+<p>Auf dem Mac ist <strong>MacTeX</strong> die empfehlenswerte, vollständige LaTeX-Installation. Sie enthält TeX Live und die üblichen Pakete; damit musst du beim Einstieg nicht wegen fehlender Komponenten nachinstallieren.</p>
+<ol>
+  <li>Lade <a href="https://tug.org/mactex/mactex-download.html" target="_blank" rel="noopener">MacTeX</a> von der offiziellen Seite der TeX Users Group herunter. Beachte den grossen Download.</li>
+  <li>Öffne <code>MacTeX.pkg</code> und folge dem macOS-Installer bis «Installation erfolgreich» erscheint.</li>
+  <li>Installiere anschliessend <a href="https://texstudio.org/" target="_blank" rel="noopener">TeXstudio</a>. Öffne die App bei der ersten Warnung über das Kontextmenü mit «Öffnen».</li>
+  <li>Erstelle <code>main.tex</code> und kompiliere den Minimalcode mit <strong>F5</strong>.</li>
+</ol>
+<h2>Wenn wenig Speicher frei ist</h2>
+<p><a href="https://tug.org/mactex/" target="_blank" rel="noopener">BasicTeX</a> ist kleiner, enthält aber nicht alle Pakete und keine Editor-App. Für die erste BMA empfehlen wir deshalb MacTeX; fehlende Pakete sind für Einsteiger:innen mühsamer als der grössere Download.</p>
+<h2>Minimaldatei</h2>
+<pre><code>\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\begin{document}
+Hallo LaTeX!
+\end{document}</code></pre>
+<p>Bei einer aktuellen LaTeX-Installation ist <code>inputenc</code> oft nicht mehr nötig; er schadet in dieser einfachen pdfLaTeX-Datei jedoch nicht. Entscheidend ist: Nach jeder kleinen Änderung wieder kompilieren.</p>
+</body>
+</html>

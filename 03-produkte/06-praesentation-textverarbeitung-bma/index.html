@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textverarbeitung für die BMA</title>
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="reveal.js/dist/theme/solarized.css" id="theme">
+  <style>
+    .reveal { font-size: 34px; }
+    .reveal h1 { font-size: 1.7em; color: #075b72; }
+    .reveal h2 { color: #075b72; }
+    .reveal .slides { text-align: left; }
+    .reveal .slides > section:first-child { text-align: center; }
+    .reveal strong { color: #b58900; }
+    .reveal table { font-size: .68em; margin: 0 auto; }
+    .reveal th { color: #075b72; }
+    .reveal li { margin: .28em 0; }
+    .reveal blockquote { width: 88%; padding: .45em .8em; background: rgba(238, 232, 213, .75); box-shadow: none; }
+    .reveal .box, .reveal .warning { margin-top: .8em; padding: .65em .9em; border-radius: .25em; font-size: .82em; }
+    .reveal .box { border-left: .3em solid #2aa198; background: rgba(42, 161, 152, .12); }
+    .reveal .warning { border-left: .3em solid #dc322f; background: rgba(220, 50, 47, .1); }
+    .reveal .small { font-size: .65em; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="textverarbeitung-bma.md"
+               data-separator="^---$"
+               data-separator-vertical="^--$"
+               data-separator-notes="^Note:"></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+  <script src="reveal.js/dist/plugin/markdown.js"></script>
+  <script src="reveal.js/dist/plugin/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'fade',
+      transitionSpeed: 'fast',
+      center: true,
+      plugins: [ RevealMarkdown, RevealNotes ]
+    });
+  </script>
+</body>
+</html>

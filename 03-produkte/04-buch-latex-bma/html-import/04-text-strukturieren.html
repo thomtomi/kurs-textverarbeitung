@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>3. Text und Kapitel strukturieren</title></head>
+<body>
+<h1>3. Text und Kapitel strukturieren</h1>
+<p>In LaTeX beschreibst du die Bedeutung deines Textes. LaTeX übernimmt Nummerierung, Inhaltsverzeichnis, Umbrüche und ein einheitliches Erscheinungsbild.</p>
+<h2>Überschriften</h2>
+<pre><code>\section{Einleitung}
+\subsection{Ausgangslage}
+\subsubsection{Fragestellung}</code></pre>
+<p>Verwende höchstens diese drei Ebenen. Schreibe Nummern wie «1.2» nie selbst hin; sie werden beim Kompilieren erzeugt.</p>
+<h2>Mehrere Dateien</h2>
+<p>Bei einer längeren Arbeit bleibt <code>main.tex</code> übersichtlich, wenn du Kapitel auslagerst:</p>
+<pre><code>\input{kapitel/einleitung}
+\input{kapitel/methode}</code></pre>
+<p>In den eingebundenen Dateien steht nur der Kapitelinhalt, also zum Beispiel <code>\section{Einleitung}</code> – kein zweites <code>\documentclass</code> und kein zweites <code>\begin{document}</code>.</p>
+<h2>Absätze und Listen</h2>
+<p>Ein leerer Zeilenwechsel im Quelltext beginnt einen neuen Absatz. Erzeuge Abstände oder Einzüge nicht mit Leerzeichen. Für Listen nutzt du die vorgesehenen Umgebungen.</p>
+</body>
+</html>

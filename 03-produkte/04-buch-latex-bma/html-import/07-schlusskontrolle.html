@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>6. Fehler finden und Schlusskontrolle</title></head>
+<body>
+<h1>6. Fehler finden und Schlusskontrolle</h1>
+<p>LaTeX-Fehler sind normal. Die wichtigste Regel lautet: Lies die <strong>erste</strong> Fehlermeldung und prüfe zuerst die letzte Änderung.</p>
+<h2>Häufige Fehler</h2>
+<table>
+<thead><tr><th>Meldung oder Symptom</th><th>Erste Prüfung</th></tr></thead>
+<tbody>
+<tr><td><code>Undefined control sequence</code></td><td>Befehl falsch geschrieben oder benötigtes Paket fehlt.</td></tr>
+<tr><td><code>File ... not found</code></td><td>Dateiname, Ordner und Gross-/Kleinschreibung prüfen.</td></tr>
+<tr><td><code>Missing } inserted</code></td><td>In der letzten Änderung eine geschweifte Klammer suchen.</td></tr>
+<tr><td>«??» in der PDF</td><td>Nochmals kompilieren; bei Quellen Biber ausführen.</td></tr>
+<tr><td>Bild an ungewohnter Stelle</td><td>PDF erst vollständig lesen; Gleitobjekt nicht sofort erzwingen.</td></tr>
+</tbody></table>
+<h2>Arbeitsweise bei Fehlern</h2>
+<ol>
+  <li>Speichere eine Kopie des funktionierenden Standes.</li>
+  <li>Gehe zur ersten roten Meldung im Log.</li>
+  <li>Prüfe die genannte Zeile und die Zeile davor.</li>
+  <li>Ändere nur eine Sache und kompiliere erneut.</li>
+  <li>Wenn du feststeckst, bringe <code>main.tex</code>, die erste Fehlermeldung und einen Minimalfall zur Lehrperson.</li>
+</ol>
+</body>
+</html>

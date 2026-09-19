@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de-CH">
+<head><meta charset="utf-8"><title>4. Bilder, Tabellen und Formeln</title></head>
+<body>
+<h1>4. Bilder, Tabellen und Formeln</h1>
+<p>Abbildungen und Tabellen sollen eine Aussage im Text stützen. Jede wird im Text erwähnt, erklärt, beschriftet und bei fremden Inhalten mit einer Quelle versehen.</p>
+<h2>Abbildung einfügen</h2>
+<pre><code>\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.75\textwidth]{bilder/messwerte.pdf}
+  \caption{Entwicklung der Messwerte.}
+  \label{fig:messwerte}
+\end{figure}
+
+Abbildung~\ref{fig:messwerte} zeigt ...</code></pre>
+<p>Für Diagramme eignet sich PDF; Fotos können PNG oder JPG sein. Dateinamen ohne Leerschläge, Umlaute und Sonderzeichen vermeiden viele Fehler.</p>
+<h2>Grundregel für Gleitobjekte</h2>
+<p>Eine <code>figure</code>- oder <code>table</code>-Umgebung darf LaTeX auf einer geeigneten Seite platzieren. Erzwinge die Position nicht frühzeitig; prüfe erst die fertige PDF.</p>
+</body>
+</html>

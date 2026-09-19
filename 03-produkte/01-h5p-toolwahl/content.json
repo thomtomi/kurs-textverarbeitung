@@ -1,0 +1,251 @@
+{
+  "titleScreen": {
+    "title": {
+      "text": "Welches Textverarbeitungs-Tool passt zu dir?",
+      "display": true
+    },
+    "image": {},
+    "skip": false
+  },
+  "resultScreen": {
+    "animation": "fade-in",
+    "displayTitle": true,
+    "displayDescription": true,
+    "imagePosition": "background"
+  },
+  "personalities": [
+    {
+      "name": "MS Word",
+      "description": "MS Word ist das am weitesten verbreitete Textverarbeitungsprogramm und ideal für dich, wenn du eine etablierte, benutzerfreundliche Lösung möchtest. Mit vordefinierten Formatvorlagen, Cloud-Integration über Microsoft 365 und umfassender Unterstützung an Schulen und in Unternehmen kannst du direkt starten. Geeignet für alle Arten von Arbeiten, besonders wenn Zusammenarbeit und direkte Kommentarfunktionen wichtig sind.",
+      "image": {}
+    },
+    {
+      "name": "LibreOffice Writer",
+      "description": "LibreOffice Writer ist eine kostenlose und offene Alternative zu Word. Es bietet ähnliche Funktionen wie MS Word, erfordert aber keinen Softwarekauf und funktioniert auf vielen Betriebssystemen. Wähle LibreOffice, wenn dir kostenloses, unabhängiges Arbeiten und der Zugang zu komfortablen Werkzeugen ohne Lizenzgebühren wichtig ist. Die Bedienung ist vergleichbar mit Word, die Einarbeitungszeit aber meist kurz.",
+      "image": {}
+    },
+    {
+      "name": "LaTeX",
+      "description": "LaTeX ist eine spezialisierte Programmiersprache für professionelle Textdokumentation, besonders wertvoll für naturwissenschaftliche Arbeiten mit vielen Formeln, Tabellen und Querverweisen. LaTeX produziert hochwertige, konsistente Typografie automatisch. Es erfordert eine Einlernphase und Komfort mit Text-basiertem Arbeiten (Befehle statt WYSIWYG-Editor), lohnt sich aber für technisch anspruchsvolle Arbeiten und für alle, die gerne neue Technologien erkunden.",
+      "image": {}
+    }
+  ],
+  "questions": [
+    {
+      "text": "Wie viel Erfahrung hast du mit Textverarbeitungsprogrammen?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Wenig, ich will möglichst einfach starten",
+          "personality": "MS Word",
+          "image": {}
+        },
+        {
+          "text": "Mittel, ich kenne Word oder Writer bereits gut",
+          "personality": "LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Ich habe schon mit Markup- oder Code-Sprachen gearbeitet",
+          "personality": "LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Wie wichtig sind dir kostenlose oder quelloffene Programme?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Nicht wichtig, ich nutze, was vorhanden ist",
+          "personality": "MS Word",
+          "image": {}
+        },
+        {
+          "text": "Eher wichtig, am liebsten kostenlos",
+          "personality": "LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Sehr wichtig, ich will unabhängig von Lizenzen sein",
+          "personality": "LibreOffice Writer, LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Enthält deine BMA viele Formeln, chemische Strukturen oder Diagramme?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Kaum, eher Text und einfache Tabellen",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Einige Formeln und Abbildungen",
+          "personality": "MS Word, LibreOffice Writer, LaTeX",
+          "image": {}
+        },
+        {
+          "text": "Sehr viele, präzise Formeln sind zentral",
+          "personality": "LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Wie wichtig ist dir ein besonders ‹schönes›, typografisch hochwertiges Layout?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Nicht so wichtig, Hauptsache korrekt und lesbar",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Wichtig, professionell sollte es aussehen",
+          "personality": "MS Word, LibreOffice Writer, LaTeX",
+          "image": {}
+        },
+        {
+          "text": "Sehr wichtig, professionelles Druckbild und Typografie",
+          "personality": "LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Willst du mit anderen (z.B. Betreuungsperson) in Echtzeit gemeinsam im selben Dokument arbeiten oder kommentieren?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Ja, Cloud-Zusammenarbeit ist mir wichtig",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Teils, E-Mail-Austausch genügt auch",
+          "personality": "MS Word, LibreOffice Writer, LaTeX",
+          "image": {}
+        },
+        {
+          "text": "Nein, ich arbeite lieber mit Versionskontrolle oder solo",
+          "personality": "LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Wie viel Zeit willst du investieren, um ein neues Werkzeug zu lernen?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Möglichst wenig, ich will schnell arbeiten",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Etwas Zeit ist okay",
+          "personality": "MS Word, LibreOffice Writer, LaTeX",
+          "image": {}
+        },
+        {
+          "text": "Ich bin bereit, mich in Syntax und Befehle einzuarbeiten",
+          "personality": "LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Welches Programm ist auf deinem Gerät bereits installiert oder gewohnt?",
+      "image": {},
+      "answers": [
+        {
+          "text": "MS Word ist vorhanden",
+          "personality": "MS Word",
+          "image": {}
+        },
+        {
+          "text": "LibreOffice",
+          "personality": "LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Keines davon / ich bin offen",
+          "personality": "MS Word, LibreOffice Writer, LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Wie gehst du am liebsten mit Formatierung um?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Direkt mit Maus und Symbolleiste (grafisch, WYSIWYG)",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Mit Formatvorlagen, aber über eine grafische Oberfläche",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Über Text-Befehle/Code, das Ergebnis sehe ich erst nach dem Kompilieren",
+          "personality": "LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Wie gross soll deine Arbeit ungefähr werden?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Eher kurz und einfach strukturiert (bis 30 Seiten, wenig Verzeichnisse)",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Mittel, mit Inhaltsverzeichnis, Literaturliste, mehreren Kapiteln",
+          "personality": "MS Word, LibreOffice Writer, LaTeX",
+          "image": {}
+        },
+        {
+          "text": "Umfangreich, mit vielen Querverweisen, Formeln, ausführlichem Literaturverzeichnis",
+          "personality": "LibreOffice Writer, LaTeX",
+          "image": {}
+        }
+      ]
+    },
+    {
+      "text": "Bist du neugierig, ein neues oder unbekanntes Programm auszuprobieren?",
+      "image": {},
+      "answers": [
+        {
+          "text": "Nein, ich bleibe lieber bei Bekanntem",
+          "personality": "MS Word",
+          "image": {}
+        },
+        {
+          "text": "Ein bisschen, wenn der Aufwand überschaubar bleibt",
+          "personality": "MS Word, LibreOffice Writer",
+          "image": {}
+        },
+        {
+          "text": "Ja, ich probiere gerne etwas Neues aus",
+          "personality": "LibreOffice Writer, LaTeX",
+          "image": {}
+        }
+      ]
+    }
+  ],
+  "startText": "Quiz starten",
+  "progressText": "Frage @question von @total",
+  "retakeText": "Quiz wiederholen",
+  "animation": true,
+  "buttonColor": "4D5DAA",
+  "progressbarColor": "38B755"
+}
